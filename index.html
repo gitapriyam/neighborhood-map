@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gita Priyam Neighborhood Map</title>
+    <meta name="viewport" content="width=device-width">
+
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqk7scxWhWGD3HMBAFWM0Zua2k8LHt-uM">
+    </script>
+    <script src="js/knockout-3.3.0.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+    <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
+    <script src="js/yelpApi.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="headerContainer" class="col-md-12 col-xs-12">
+            <div class="row">
+                <div id="header" class="col-md-12 col-xs-12">
+                    <h3>Neigborhood locations around Gale Ranch, San Ramon, CA </h3>
+                    <div id="filterLocation">Filter (By Name or Type (restaurant, bar, school, shopping ) ):<input id="filetr-field" data-bind="textInput: filterCondition"></div>
+                </div>
+            </div>
+        </div>
+        <div id="mapContainer" class="col-md-12 col-xs-12">
+            <div class="row">
+                <div id="sidebar" class="col-md-3 col-xs-4">
+                    <p>Locations:</p>
+                    <div id="loc-list" data-bind="foreach: filteredLocations">
+                        <button data-bind="text: title, css: type, click: myLocations.animateMarker"></button><br>
+                    </div>
+                </div>
+                <div id="map-canvas" class="col-md-9 col-xs-8"> </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

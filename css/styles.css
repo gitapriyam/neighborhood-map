@@ -1,0 +1,70 @@
+body {
+    height: 100%;
+    color: green;
+}
+
+#header {
+    padding: 10px;
+    border: 2px solid #cef6bf;
+    background-color: #eef4ed;
+    height: 120px;
+}
+
+#mapContainer {
+    height: 100%;
+    padding: 20px;
+    border: 2px solid #CCC;
+    margin-bottom: 20px;
+    background-color: #FFF;
+}
+
+#map-canvas {
+    height: 650px;
+}
+
+#format {
+    margin-top: 2em;
+}
+
+#search-field {
+    color: black;
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 25px;
+    padding-left: 30px;
+    border-color:#088b08;
+}
+
+    button.restaurant {
+        background: url('../images/restaurant.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-color: #f0f6f6; 
+    }
+
+    button.school {
+        background: url('../images/school.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-color: #f0f6f6;
+    }
+
+    button.shopping {
+        background: url('../images/shoppingmall.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-color: #f0f6f6;
+    }
+
+    button.bar {
+        background: url('../images/bar.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-color: #f0f6f6;
+    }
