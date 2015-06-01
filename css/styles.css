@@ -1,6 +1,8 @@
 body {
     height: 100%;
     color: green;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 #header {
@@ -8,6 +10,7 @@ body {
     border: 2px solid #cef6bf;
     background-color: #eef4ed;
     height: 120px;
+    width: 100%;
 }
 
 #mapContainer {
@@ -16,10 +19,27 @@ body {
     border: 2px solid #CCC;
     margin-bottom: 20px;
     background-color: #FFF;
+    display: table;
+}
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.myclass {
+    display: table-row;
+}
+
+.sidebar {
+    display: table-cell;
+    float: none;
 }
 
 #map-canvas {
-    height: 650px;
+    display: table-cell;
+    float: none;
 }
 
 #format {
@@ -37,11 +57,10 @@ button {
     width: 100%;
     vertical-align: middle;
     border-radius: 25px;
-    padding-left: 30px;
-    border-color:#088b08;
+    border-color: #088b08;
 }
 
-    button.restaurant {
+/*button.restaurant {
         background: url('../images/restaurant.png');
         background-position: left;
         background-repeat: no-repeat;
@@ -67,4 +86,4 @@ button {
         background-position: left;
         background-repeat: no-repeat;
         background-color: #f0f6f6;
-    }
+    }*/
