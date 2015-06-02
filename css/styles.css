@@ -30,11 +30,6 @@ body {
     width: 100%;
 }
 
-#loc-list {
-    padding-right: 10px;
-    padding-left: 5px;
-}
-
 #mapContainer {
     height: 100%;
     padding-right: 5px;
@@ -46,6 +41,7 @@ body {
     display: table;
 }
 
+
 .row-eq-height {
     display: -webkit-box;
     display: -webkit-flex;
@@ -53,27 +49,22 @@ body {
     display: flex;
 }
 
-.myclass {
-    display: table-row;
+#loc-list {
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .sidebar {
-    display: table-cell;
     float: none;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 #map-canvas {
-    display: table-cell;
     float: none;
 }
 
-#format {
-    margin-top: 2em;
-}
-
-#search-field {
+.filterField{
     color: black;
 }
 
@@ -86,31 +77,3 @@ button {
     border-radius: 25px;
     border-color: #088b08;
 }
-
-/*button.restaurant {
-        background: url('../images/restaurant.png');
-        background-position: left;
-        background-repeat: no-repeat;
-        background-color: #f0f6f6; 
-    }
-
-    button.school {
-        background: url('../images/school.png');
-        background-position: left;
-        background-repeat: no-repeat;
-        background-color: #f0f6f6;
-    }
-
-    button.shopping {
-        background: url('../images/shoppingmall.png');
-        background-position: left;
-        background-repeat: no-repeat;
-        background-color: #f0f6f6;
-    }
-
-    button.bar {
-        background: url('../images/bar.png');
-        background-position: left;
-        background-repeat: no-repeat;
-        background-color: #f0f6f6;
-    }*/
