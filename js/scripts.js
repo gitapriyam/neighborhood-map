@@ -12,8 +12,7 @@ var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions)
 
 /* This is a singleton google InfoWindow for showing Yelp API review results */
 var infowindow = new google.maps.InfoWindow({
-    content: "<div id='yelpReviewWindow'></div>",
-    maxWidth: 250
+    content: "<div id='yelpReviewWindow'></div>"
 });
 
 /* This MODEL represents all the interested locations */
@@ -347,7 +346,7 @@ var locationMarkers = function (locations) {
                                     "<p><b>Phone </b> : " + data.display_phone + "</p>" +
                                     "<p><b> Review Count </b>: " + data.review_count + "</p>" +
                                     "<img src='" + data.rating_img_url_large + "'><br>" +
-                                    "<p> <b>Lastest Review </b>:" + data.snippet_text + "</p>" +
+                                    //"<p> <b>Lastest Review </b>:" + data.snippet_text + "</p>" +
                                     "</div>";
                 infowindow.setContent(contentString);
             });

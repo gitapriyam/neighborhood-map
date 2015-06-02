@@ -3,29 +3,54 @@ body {
     color: green;
     font-size: 12px;
     font-weight: 400;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.container {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.headerContainer {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #header {
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
     border: 2px solid #cef6bf;
     background-color: #eef4ed;
-    height: 120px;
+    height: 100px;
     width: 100%;
+}
+
+#loc-list {
+    padding-right: 10px;
+    padding-left: 5px;
 }
 
 #mapContainer {
     height: 100%;
-    padding: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     border: 2px solid #CCC;
-    margin-bottom: 20px;
     background-color: #FFF;
     display: table;
 }
+
 .row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .myclass {
@@ -35,6 +60,8 @@ body {
 .sidebar {
     display: table-cell;
     float: none;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #map-canvas {
