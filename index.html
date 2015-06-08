@@ -11,35 +11,34 @@
     <script src="js/knockout-3.3.0.js"></script>
     <script src="js/jquery-2.1.3.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px)" href="css/small-devices.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 480px)" href="css/mobile.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px)" href="css/tablet.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 992px)" href="css/tablet.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 479px)" href="css/small-devices.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 480px) and (max-device-width: 767px)" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 991px)" href="css/tablet.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 992px) and (max-device-width: 1199px)" href="css/finer-tablet.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1200px)" href="css/styles.css">
-    <!--<link rel="stylesheet" href="css/styles.css">-->
     <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
     <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
     <script src="js/yelpApi.js"></script>
 </head>
 <body>
     <div class="container">
-        <div id="headerContainer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="headerContainer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 headerContainer">
             <div class="row">
-                <div id="header" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div id="header" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
                     <h4>Neigborhood locations around Gale Ranch, San Ramon, CA </h4>
-                    <div id="filterLocation">Filter (By Name or Type (restaurant, bar, school, shopping ) ):<input id="filterField" class="filterField" data-bind="textInput: filterCondition"></div>
+                    <div id="filterLocation">Filter (By Name or Type):<input id="filterField" class="filterField" data-bind="textInput: filterCondition"></div>
                 </div>
             </div>
         </div>
-        <div id="mapContainer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="mapContainer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mapContainer">
             <div class="row-eq-height">
                 <div id="sidebar" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <p class="locs">Locations:</p>
-                    <div id="loc-list" data-bind="foreach: filteredLocations">
-                        <button data-bind="text: title, click: myLocations.animateMarker"></button><br>
+                    <div id="loc-list" data-bind="foreach: filteredLocations" class="loc-list">
+                        <button class="myButton" data-bind="text: title, click: myLocations.animateMarker"></button><br>
                     </div>
                 </div>
-                <div id="map-canvas" class="col-xs-9 col-sm-9 col-md-9 col-lg-9"> </div>
+                <div id="map-canvas" class="col-xs-9 col-sm-9 col-md-9 col-lg-9 map-canvas"> </div>
             </div>
         </div>
     </div>

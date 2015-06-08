@@ -24,7 +24,7 @@ body {
     height: 15%;
 }
 
-#header {
+.header {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
@@ -35,7 +35,7 @@ body {
     width: 100%;
 }
 
-#mapContainer {
+.mapContainer {
     height: 100%;
     padding-right: 5px;
     padding-left: 5px;
@@ -54,21 +54,14 @@ body {
     display: inline;
 }
 
-#loc-list {
+.loc-list {
     padding-right: 5px;
     padding-left: 5px;
 }
 
-.sidebar {
+.map-canvas {
     float: none;
-    padding-left: 5px;
-    padding-right: 5px;
     height: 100%;
-    min-height: 100%;
-}
-
-#map-canvas {
-    float: none;
 }
 
 .filterField {
@@ -80,7 +73,7 @@ body {
     margin-bottom: 2px;
 }
 
-button {
+.myButton {
     margin: 2px;
     padding: 2px;
     height: 30px;
