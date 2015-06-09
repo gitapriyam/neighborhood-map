@@ -312,6 +312,7 @@ var locationMarkers = function (locations) {
     */
 
     self.animateMarker = function (currentLocation) {
+        map.panTo(currentLocation.marker.getPosition());
         currentLocation.marker.setAnimation(google.maps.Animation.BOUNCE);
         setTimeout(function () { currentLocation.marker.setAnimation(null); }, 1000);
     };
@@ -339,6 +340,7 @@ var locationMarkers = function (locations) {
         //Add event listener to each map marker to trigger the corresponding infowindow on click
         google.maps.event.addListener(currentLocation.marker, 'click', function () {
 
+            map.panTo(currentLocation.marker.getPosition());
             //Request Yelp info, then format it, and place it in infowindow
             yelpApiCall(currentLocation.phone, function (data) {
                 var contentString = "<div id='yelpReviewWindow'>" +
