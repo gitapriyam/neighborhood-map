@@ -10,6 +10,12 @@ body {
     margin: 5px 5px;
 }
 
+h4 {
+    font-size: 14px;
+    margin: 0px 0px;
+    padding: 5px 5px;
+}
+
 .container {
     padding-left: 5px;
     padding-right: 5px;
@@ -21,29 +27,44 @@ body {
 .headerContainer {
     padding-left: 5px;
     padding-right: 5px;
-    height: 15%;
+    background-color: #eef4ed;
+    border: 2px solid #cef6bf;
+    /*height: 10%;*/
+}
+
+.row {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.row {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .header {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
-    border: 2px solid #cef6bf;
+    /*margin: 0px 0px;*/
+    padding: 5px 5px;
     background-color: #eef4ed;
-    height: 100px;
+    /*height: 100px;*/
     width: 100%;
 }
 
+.filterLocation {
+    /*margin: 0px 0px;*/
+    padding: 5px 5px;
+}
+
 .mapContainer {
-    height: 100%;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 0px 0px;
     border: 2px solid #CCC;
     background-color: #FFF;
-    height: 85%;
+    height: 92%;
+    overflow: hidden;
+}
+
+.sidebar {
+    padding: 5px 5px;
 }
 
 
@@ -62,6 +83,7 @@ body {
 .map-canvas {
     float: none;
     height: 100%;
+    overflow: hidden;
 }
 
 .filterField {
@@ -74,9 +96,10 @@ body {
 }
 
 .myButton {
-    margin: 2px;
-    padding: 2px;
-    height: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px; 
     width: 100%;
     vertical-align: middle;
     border-radius: 15px;

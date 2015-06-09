@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Gita Priyam Neighborhood Map</title>
+    <title>Neighborhood Assignment Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script type="text/javascript"
@@ -25,14 +25,14 @@
         <div id="headerContainer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 headerContainer">
             <div class="row">
                 <div id="header" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
-                    <h4>Neigborhood locations around Gale Ranch, San Ramon, CA </h4>
-                    <div id="filterLocation">Filter (By Name or Type):<input id="filterField" class="filterField" data-bind="textInput: filterCondition"></div>
+                    <h4>Neigborhood locations at San Ramon, CA </h4>
+                    <div id="filterLocation" class="filterLocation">Filter (By Name or Type):<input id="filterField" class="filterField" data-bind="textInput: filterCondition"></div>
                 </div>
             </div>
         </div>
         <div id="mapContainer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mapContainer">
             <div class="row-eq-height">
-                <div id="sidebar" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <div id="sidebar" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 sidebar">
                     <p class="locs">Locations:</p>
                     <div id="loc-list" data-bind="foreach: filteredLocations" class="loc-list">
                         <button class="myButton" data-bind="text: title, click: myLocations.animateMarker"></button><br>

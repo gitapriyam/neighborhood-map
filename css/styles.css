@@ -9,8 +9,10 @@ body {
     margin: 5px 5px;
 }
 
-h4{
+h4 {
     font-size: 16px;
+    /*margin: 0px 0px;*/
+    padding: 5px 5px;
 }
 
 .container {
@@ -25,30 +27,39 @@ h4{
 .headerContainer {
     padding-left: 5px;
     padding-right: 5px;
-    height: 15%;
+    background-color: #eef4ed;
+    border: 2px solid #cef6bf;
+    /*height: 10%;*/
+}
+
+.row {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .header {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
-    border: 2px solid #cef6bf;
+    /*margin: 0px 0px;*/
+    padding: 5px 5px;
     background-color: #eef4ed;
     width: 100%;
 }
 
-.mapContainer {
-    height: 100%;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border: 2px solid #CCC;
-    background-color: #FFF;
-    height: 85%;
+.filterLocation {
+    /*margin: 0px 0px;*/
+    padding: 5px 5px;
 }
 
+.mapContainer {
+    padding: 0px 0px;
+    border: 2px solid #CCC;
+    background-color: #FFF;
+    height: 92%;
+    overflow: hidden;
+}
+
+.sidebar {
+    padding: 5px 5px;
+}
 
 .row-eq-height {
     display: -webkit-box;
@@ -65,6 +76,7 @@ h4{
 .map-canvas {
     float: none;
     height: 100%;
+    overflow: hidden;
 }
 
 .filterField {
@@ -78,11 +90,12 @@ h4{
 
 
 .myButton {
-    margin: 5px;
-    padding: 5px;
-    /*height: 40px;*/
+    margin-left: 0px; 
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     width: 100%;
     vertical-align: middle;
-    border-radius: 15px;
+    border-radius: 25px;
     border-color: #088b08;
 }
