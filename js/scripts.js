@@ -340,7 +340,8 @@ var locationMarkers = function (locations) {
         //Add event listener to each map marker to trigger the corresponding infowindow on click
         google.maps.event.addListener(currentLocation.marker, 'click', function () {
 
-            map.panTo(currentLocation.marker.getPosition());
+            //map.panTo(currentLocation.marker.getPosition());
+            map.setCenter(currentLocation.marker.getPosition());
             //Request Yelp info, then format it, and place it in infowindow
             yelpApiCall(currentLocation.phone, function (data) {
                 var contentString = "<div id='yelpReviewWindow'>" +
